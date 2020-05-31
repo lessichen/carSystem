@@ -65,7 +65,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<Car> findPageDataByCarLike(String like, int pageNum, int pageSize) {
-        return carDao.findPageDataByCarLike(like, (pageNum-1)*pageSize, pageSize);
+        return carDao.findPageDataByCarLike(like, (pageNum - 1) * pageSize, pageSize);
     }
 
 

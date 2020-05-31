@@ -97,6 +97,14 @@ public class CarController {
         return JSONResult.ok(result);
     }
 
+    /**
+     * 模糊查询车辆，带分页显示
+     *
+     * @param like
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
     @GetMapping("findByCarLike")
     public JSONResult findPageDataByCarLike(@RequestParam String like, @RequestParam int pageNum, @RequestParam int pageSize) {
         List<Car> cars = carService.findPageDataByCarLike(like, pageNum, pageSize);
