@@ -18,4 +18,8 @@ public interface CarService {
     void updateById(Car car);
 
     void insertCar(Car car);
+
+    boolean saleCar(Car car);
+
+    List<Car> findPageDataByCarLike(String like, int pageNum, int pageSize);
 }
